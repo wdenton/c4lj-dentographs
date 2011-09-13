@@ -9,6 +9,7 @@ File.read(file).each do |line|
     call_number.gsub!(/[A-Za-z\/].*/, '') # Remove any letters and slashes (/)
     puts call_number if call_number.to_i < 1000 && call_number.length > 0
   rescue Exception => e
-    STDERR.puts "(Error #{e}) #{line}"
+    # Uncomment to see the call numbers that aren't Dewey
+    # STDERR.puts "(Error #{e}) #{line}"
   end
 end
