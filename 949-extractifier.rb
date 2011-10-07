@@ -36,6 +36,6 @@ File.open(file).each_with_index do |line, index|
     next unless m[2].to_i > 0
     puts branch + ":" + m[1] + " " + m[2]
   rescue Exception => e
-    STDERR.puts "Skipped #{callNum}: #{e}"
+    # STDERR.puts "Skipped #{callNum}: #{e}"
   end
 end
