@@ -14,7 +14,7 @@ table <- table(d)
 x <- 1:nrow(table)
 y <- 1:ncol(table)
 res <- persp(x, y, table,
-        zlim = c(0,20000), # Change as necessary, or comment out
+        zlim = c(0,10000), # Change as necessary, or comment out
         theta = -5, phi = 20,
         scale = TRUE,
         border = NA,
