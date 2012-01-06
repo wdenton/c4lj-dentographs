@@ -30,6 +30,8 @@ for (i in 1:nrow(xpoints)) {
   points(trans3d(xpoints$Point[i], 5, 0, pmat = res), col = "#000000", pch = xpoints$Label[i], cex = 2)
 }
 
+# Uncomment to draw lines along A, B, C, etc.
+# 
 # for (i in 1:nrow(xpoints)) {
 #   lines(trans3d(x=xpoints$Point[i], y, z=0, pmat = res), col = "#00ffff")
 # }
