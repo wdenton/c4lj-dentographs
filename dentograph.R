@@ -27,7 +27,8 @@ res <- persp(x, y, table,
 xpoints = read.csv("x-axis-labels.csv")
 
 for (i in 1:nrow(xpoints)) {
-  points(trans3d(xpoints$Point[i], 5, 0, pmat = res), col = "#000000", pch = xpoints$Label[i], cex = 2)
+  points(trans3d(xpoints$Point[i], 5, 0, pmat = res), col = "#000000", 
+        pch = xpoints$Label[i], cex = 2)
 }
 
 # Uncomment to draw lines along A, B, C, etc.
